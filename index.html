@@ -98,6 +98,8 @@
                 <a href="#why" class="text-dark/80 hover:text-primary transition-colors">Why Now</a>
                 <a href="#structure" class="text-dark/80 hover:text-primary transition-colors">Core Structure</a>
                 <a href="#entry" class="text-dark/80 hover:text-primary transition-colors">Entry Points</a>
+                <!-- 桌面端 White Paper 导航链接 -->
+                <a href="#whitepaper" class="text-dark/80 hover:text-primary transition-colors">White Paper</a>
             </div>
             <div class="md:hidden">
                 <button id="mobileMenuBtn" class="text-dark hover:text-primary" aria-label="Toggle mobile menu">
@@ -111,6 +113,8 @@
                 <a href="#why" class="text-dark/80 hover:text-primary py-2 transition-colors">Why Now</a>
                 <a href="#structure" class="text-dark/80 hover:text-primary py-2 transition-colors">Core Structure</a>
                 <a href="#entry" class="text-dark/80 hover:text-primary py-2 transition-colors">Entry Points</a>
+                <!-- 移动端 White Paper 导航链接 -->
+                <a href="#whitepaper" class="text-dark/80 hover:text-primary py-2 transition-colors">White Paper</a>
             </div>
         </div>
     </nav>
@@ -246,7 +250,8 @@
                 Explore the framework through its public, architectural, and social entry points.
             </p>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- 关键修改1：布局改为 md:grid-cols-2 xl:grid-cols-4，适配不同屏幕宽度 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
                 <!-- GitHub -->
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                     <div class="text-primary text-3xl mb-4">
@@ -300,6 +305,48 @@
                         View LinkedIn <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
+                
+                <!-- White Paper 卡片 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fa fa-file-pdf-o"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">White Paper</h3>
+                    <p class="text-dark/70 mb-4">
+                        Comprehensive framework documentation.
+                    </p>
+                    <div class="bg-light/80 rounded-lg p-3 mb-4 text-sm text-dark/60">
+                        <i class="fa fa-info-circle text-primary mr-2"></i>
+                        Full technical and conceptual deep dive into HAIN.
+                    </div>
+                    <!-- 关键修改2：链接改为 #whitepaper，文案改为 Learn more，避免CTA重复 -->
+                    <a href="#whitepaper" class="text-primary font-medium hover:underline inline-flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- White Paper 独立板块 -->
+    <section id="whitepaper" class="section-padding px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-4xl">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-light/80">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-primary text-6xl md:text-8xl">
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4">HAIN White Paper</h2>
+                        <p class="text-lg text-dark/70 mb-6">
+                            Dive deep into the Hybrid AI Native framework – its core principles, architectural design, and practical implementation guidelines.
+                        </p>
+                        <!-- 备注：请核实此PDF地址是否真实存在，若未上线可临时替换为GitHub仓地址 -->
+                        <a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                            <i class="fa fa-download mr-2"></i> Download Full White Paper
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -315,11 +362,14 @@
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Domains</h3>
+                    <h3 class="text-lg font-semibold mb-4">Domains & Resources</h3>
                     <ul class="space-y-2 text-white/70">
                         <li><a href="https://hainworld.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainworld.com</a></li>
                         <li><a href="https://hain.world" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hain.world</a></li>
                         <li><a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainoa.org</a></li>
+                        <li><a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">White Paper (PDF)</a></li>
+                        <!-- 关键修改3：补充邮箱联系方式 -->
+                        <li><a href="mailto:hello@hainworld.com" class="hover:text-white transition-colors">hello@hainworld.com</a></li>
                     </ul>
                 </div>
             </div>
