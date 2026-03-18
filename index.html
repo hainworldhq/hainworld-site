@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 基础元数据 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO 核心标签 -->
+    <meta name="description" content="HAIN World is the public-facing identity for the Hybrid AI Native concept - a structured entry point for cloud, edge, and agentic AI-native systems.">
     <title>HAIN World - Hybrid AI Native</title>
+    
+    <!-- Open Graph 社交标签 -->
+    <meta property="og:title" content="HAIN World - Hybrid AI Native">
+    <meta property="og:description" content="A structured entry point for cloud, edge, and agentic AI-native systems.">
+    <meta property="og:url" content="https://hainworld.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hainworld.com/og-image.png"> <!-- 替换为实际 OG 图地址 -->
+    
+    <!-- Twitter 卡片标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HAIN World - Hybrid AI Native">
+    <meta name="twitter:description" content="A structured entry point for cloud, edge, and agentic AI-native systems.">
+    <meta name="twitter:image" content="https://hainworld.com/og-image.png"> <!-- 替换为实际 OG 图地址 -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://hainworld.com/favicon.ico" type="image/x-icon"> <!-- 替换为实际 favicon 地址 -->
+    <link rel="shortcut icon" href="https://hainworld.com/favicon.ico" type="image/x-icon"> <!-- 替换为实际 favicon 地址 -->
+    
+    <!-- 外部资源 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Tailwind 配置 -->
     <script>
-        // 配置 Tailwind 自定义主题
         tailwind.config = {
             theme: {
                 extend: {
@@ -24,6 +49,8 @@
             }
         }
     </script>
+    
+    <!-- 自定义工具类 -->
     <style type="text/tailwindcss">
         @layer utilities {
             .content-auto {
@@ -55,11 +82,13 @@
             }
         }
     </style>
-    <!-- 引入 Inter 字体 -->
+    
+    <!-- Inter 字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="font-sans text-dark bg-white">
     <!-- 导航栏 -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-light">
@@ -71,7 +100,7 @@
                 <a href="#entry" class="text-dark/80 hover:text-primary transition-colors">Entry Points</a>
             </div>
             <div class="md:hidden">
-                <button id="mobileMenuBtn" class="text-dark hover:text-primary">
+                <button id="mobileMenuBtn" class="text-dark hover:text-primary" aria-label="Toggle mobile menu">
                     <i class="fa fa-bars text-xl"></i>
                 </button>
             </div>
@@ -86,7 +115,7 @@
         </div>
     </nav>
 
-    <!-- Hero 区域 - 最终精简版 -->
+    <!-- Hero 区域 -->
     <section class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-4xl text-center">
             <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-bold text-dark mb-6 leading-tight">HAIN World</h1>
@@ -95,20 +124,20 @@
                 A structured entry point for cloud, edge, and agentic AI-native systems.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://hainoa.org" class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                <a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
                     Explore HAINOA
                 </a>
-                <a href="https://github.com/hainworldhq" class="px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-light transition-colors">
+                <a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-light transition-colors">
                     Visit GitHub
                 </a>
             </div>
             
-            <!-- 强化版 HAIN 框架图 - 专属视觉符号 -->
+            <!-- HAIN 框架图 -->
             <div class="mt-20 max-w-4xl mx-auto">
                 <div class="bg-light rounded-2xl p-8 border border-light/80 shadow-sm">
                     <h3 class="text-xl font-semibold text-center mb-8 text-dark">HAIN Framework</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
-                        <!-- 强化版连接线 -->
+                        <!-- 连接线 -->
                         <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/30 -translate-y-1/2 z-0"></div>
                         <div class="hidden md:block absolute top-1/2 left-1/3 w-0.5 h-20 bg-primary/30 -translate-x-1/2 -translate-y-10 z-0"></div>
                         <div class="hidden md:block absolute top-1/2 right-1/3 w-0.5 h-20 bg-primary/30 translate-x-1/2 -translate-y-10 z-0"></div>
@@ -142,7 +171,7 @@
         </div>
     </section>
 
-    <!-- Why Now 区域 - 最终精简版 -->
+    <!-- Why Now 区域 -->
     <section id="why" class="bg-light section-padding px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
             <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-8 text-center">Why Hybrid AI Native, and why now</h2>
@@ -173,13 +202,13 @@
         </div>
     </section>
 
-    <!-- Core Structure 区域 - 层级化最终版 -->
+    <!-- Core Structure 区域 -->
     <section id="structure" class="section-padding px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
             <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-12 text-center">Core structure</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                <!-- 模块 1 - HAIN World (最突出) -->
+                <!-- HAIN World -->
                 <div class="border-2 border-primary rounded-xl p-8 card-highlight bg-white hain-card">
                     <div class="text-primary text-2xl mb-4"><i class="fa fa-globe"></i></div>
                     <h3 class="text-2xl font-bold text-primary mb-4">HAIN World</h3>
@@ -188,7 +217,7 @@
                     </p>
                 </div>
                 
-                <!-- 模块 2 - HAINOA (次之) -->
+                <!-- HAINOA -->
                 <div class="border border-light rounded-xl p-8 hover:shadow-md transition-shadow bg-white hain-card">
                     <div class="text-primary text-xl mb-4"><i class="fa fa-sitemap"></i></div>
                     <h3 class="text-xl font-semibold text-primary mb-4">HAINOA</h3>
@@ -197,7 +226,7 @@
                     </p>
                 </div>
                 
-                <!-- 模块 3 - HAINIZE (稍轻) -->
+                <!-- HAINIZE -->
                 <div class="border border-light/70 rounded-xl p-6 hover:shadow-md transition-shadow bg-white/90 hain-card">
                     <div class="text-primary/80 text-xl mb-4"><i class="fa fa-wrench"></i></div>
                     <h3 class="text-xl font-medium text-primary/90 mb-4">HAINIZE</h3>
@@ -209,7 +238,7 @@
         </div>
     </section>
 
-    <!-- Entry Points 区域 - 最终优化版 -->
+    <!-- Entry Points 区域 -->
     <section id="entry" class="bg-light section-padding px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
             <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4 text-center">Entry points</h2>
@@ -231,7 +260,7 @@
                         <i class="fa fa-info-circle text-primary mr-2"></i>
                         Architecture notes, terminology, and starter templates.
                     </div>
-                    <a href="https://github.com/hainworldhq" class="text-primary font-medium hover:underline inline-flex items-center">
+                    <a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
                         Open GitHub <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
@@ -249,7 +278,7 @@
                         <i class="fa fa-info-circle text-primary mr-2"></i>
                         Core architectural principles and structured documentation.
                     </div>
-                    <a href="https://hainoa.org" class="text-primary font-medium hover:underline inline-flex items-center">
+                    <a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
                         Visit HAINOA <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
@@ -267,7 +296,7 @@
                         <i class="fa fa-info-circle text-primary mr-2"></i>
                         Industry insights and framework updates.
                     </div>
-                    <a href="https://linkedin.com/company/hainworld" class="text-primary font-medium hover:underline inline-flex items-center">
+                    <a href="https://linkedin.com/company/hainworld" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
                         View LinkedIn <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
@@ -275,7 +304,7 @@
         </div>
     </section>
 
-    <!-- Footer - 最终版 -->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-12 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
@@ -288,9 +317,9 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Domains</h3>
                     <ul class="space-y-2 text-white/70">
-                        <li><a href="https://hainworld.com" class="hover:text-white transition-colors">hainworld.com</a></li>
-                        <li><a href="https://hain.world" class="hover:text-white transition-colors">hain.world</a></li>
-                        <li><a href="https://hainoa.org" class="hover:text-white transition-colors">hainoa.org</a></li>
+                        <li><a href="https://hainworld.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainworld.com</a></li>
+                        <li><a href="https://hain.world" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hain.world</a></li>
+                        <li><a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainoa.org</a></li>
                     </ul>
                 </div>
             </div>
@@ -301,7 +330,7 @@
     </footer>
 
     <!-- 回到顶部按钮 -->
-    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary/90" aria-label="Back to top">
         <i class="fa fa-arrow-up"></i>
     </button>
 
