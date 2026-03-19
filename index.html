@@ -8,6 +8,8 @@
     
     <!-- SEO 核心标签 -->
     <meta name="description" content="HAIN World is the public-facing identity for the Hybrid AI Native concept - a structured entry point for cloud, edge, and agentic AI-native systems.">
+    <meta name="theme-color" content="#165DFF">
+    <link rel="canonical" href="https://hainworld.com">
     <title>HAIN World - Hybrid AI Native</title>
     
     <!-- Open Graph 社交标签 -->
@@ -89,11 +91,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-sans text-dark bg-white">
+<body id="top" class="font-sans text-dark bg-white">
     <!-- 导航栏 -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-light">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-primary">HAIN World</a>
+            <a href="#top" class="text-2xl font-bold text-primary">HAIN World</a>
             <div class="hidden md:flex space-x-8">
                 <a href="#why" class="text-dark/80 hover:text-primary transition-colors">Why Now</a>
                 <a href="#structure" class="text-dark/80 hover:text-primary transition-colors">Core Structure</a>
@@ -102,7 +104,7 @@
                 <a href="#whitepaper" class="text-dark/80 hover:text-primary transition-colors">White Paper</a>
             </div>
             <div class="md:hidden">
-                <button id="mobileMenuBtn" class="text-dark hover:text-primary" aria-label="Toggle mobile menu">
+                <button id="mobileMenuBtn" class="text-dark hover:text-primary" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
                     <i class="fa fa-bars text-xl"></i>
                 </button>
             </div>
@@ -123,7 +125,7 @@
     <section class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-4xl text-center">
             <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-bold text-dark mb-6 leading-tight">HAIN World</h1>
-            <p class="text-[clamp(1.25rem,3vw,1.75rem)] text-dark/80 mb-8 text-balance">The public-facing identity for the Hybrid AI Native concept.</p>
+            <p class="text-[clamp(1.25rem,3vw,1.75rem)] text-dark/80 mb-8 text-balance">The public-facing identity for the <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hybrid-ai-native.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Hybrid AI Native</a> concept.</p>
             <p class="text-lg text-dark/70 mb-10 max-w-3xl mx-auto text-balance">
                 A structured entry point for cloud, edge, and agentic AI-native systems.
             </p>
@@ -149,21 +151,21 @@
                         <!-- Cloud -->
                         <div class="hain-card bg-white rounded-xl p-6 shadow-md border border-primary/20 relative z-10 hover:shadow-lg transition-shadow">
                             <div class="text-primary text-3xl mb-4"><i class="fa fa-cloud"></i></div>
-                            <h4 class="font-semibold text-lg mb-2">Cloud</h4>
+                            <h4 class="font-semibold text-lg mb-2"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/cloud.md" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Cloud</a></h4>
                             <p class="text-dark/70 text-sm">Scale & shared intelligence</p>
                         </div>
                         
                         <!-- Edge -->
                         <div class="hain-card bg-white rounded-xl p-6 shadow-md border border-primary/20 relative z-10 hover:shadow-lg transition-shadow">
                             <div class="text-primary text-3xl mb-4"><i class="fa fa-server"></i></div>
-                            <h4 class="font-semibold text-lg mb-2">Edge</h4>
+                            <h4 class="font-semibold text-lg mb-2"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/edge.md" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Edge</a></h4>
                             <p class="text-dark/70 text-sm">Local execution & privacy</p>
                         </div>
                         
                         <!-- Agentic Systems -->
                         <div class="hain-card bg-white rounded-xl p-6 shadow-md border border-primary/20 relative z-10 hover:shadow-lg transition-shadow">
                             <div class="text-primary text-3xl mb-4"><i class="fa fa-cogs"></i></div>
-                            <h4 class="font-semibold text-lg mb-2">Agentic Systems</h4>
+                            <h4 class="font-semibold text-lg mb-2"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/agentic-systems.md" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Agentic Systems</a></h4>
                             <p class="text-dark/70 text-sm">Orchestration & decision flows</p>
                         </div>
                     </div>
@@ -181,7 +183,7 @@
             <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-8 text-center">Why Hybrid AI Native, and why now</h2>
             <div class="prose max-w-none mb-12">
                 <p class="text-lg text-dark/80 mb-6">
-                    AI systems have evolved beyond single deployment models. Cloud, edge, and agentic workflows are now interconnected parts of a single system landscape.
+                    AI systems have evolved beyond single deployment models. <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/cloud.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Cloud</a>, <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/edge.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">edge</a>, and <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/agentic-systems.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">agentic systems</a> are now interconnected parts of a single system landscape.
                 </p>
                 <p class="text-lg text-dark/80">
                     This shift demands clearer language and structure. HAIN World documents this evolution through architecture notes and conceptual assets.
@@ -191,15 +193,15 @@
             <!-- 三列卡片 -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-light/50">
-                    <h3 class="text-xl font-semibold text-primary mb-3">Cloud</h3>
+                    <h3 class="text-xl font-semibold text-primary mb-3"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/cloud.md" target="_blank" rel="noopener noreferrer" class="hover:underline">Cloud</a></h3>
                     <p class="text-dark/70">Scale, coordination, shared intelligence.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-light/50">
-                    <h3 class="text-xl font-semibold text-primary mb-3">Edge</h3>
+                    <h3 class="text-xl font-semibold text-primary mb-3"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/edge.md" target="_blank" rel="noopener noreferrer" class="hover:underline">Edge</a></h3>
                     <p class="text-dark/70">Local execution, lower latency, privacy.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-light/50">
-                    <h3 class="text-xl font-semibold text-primary mb-3">Agentic Systems</h3>
+                    <h3 class="text-xl font-semibold text-primary mb-3"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/agentic-systems.md" target="_blank" rel="noopener noreferrer" class="hover:underline">Agentic Systems</a></h3>
                     <p class="text-dark/70">Tool use, orchestration, decision flows.</p>
                 </div>
             </div>
@@ -215,7 +217,7 @@
                 <!-- HAIN World -->
                 <div class="border-2 border-primary rounded-xl p-8 card-highlight bg-white hain-card">
                     <div class="text-primary text-2xl mb-4"><i class="fa fa-globe"></i></div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">HAIN World</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-4"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hain-world.md" target="_blank" rel="noopener noreferrer" class="hover:underline">HAIN World</a></h3>
                     <p class="text-dark/80 text-lg">
                         Public entry point for the Hybrid AI Native concept.
                     </p>
@@ -224,7 +226,7 @@
                 <!-- HAINOA -->
                 <div class="border border-light rounded-xl p-8 hover:shadow-md transition-shadow bg-white hain-card">
                     <div class="text-primary text-xl mb-4"><i class="fa fa-sitemap"></i></div>
-                    <h3 class="text-xl font-semibold text-primary mb-4">HAINOA</h3>
+                    <h3 class="text-xl font-semibold text-primary mb-4"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hainoa.md" target="_blank" rel="noopener noreferrer" class="hover:underline">HAINOA</a></h3>
                     <p class="text-dark/70">
                         Open architecture layer with explicit principles and structure.
                     </p>
@@ -233,7 +235,7 @@
                 <!-- HAINIZE -->
                 <div class="border border-light/70 rounded-xl p-6 hover:shadow-md transition-shadow bg-white/90 hain-card">
                     <div class="text-primary/80 text-xl mb-4"><i class="fa fa-wrench"></i></div>
-                    <h3 class="text-xl font-medium text-primary/90 mb-4">HAINIZE</h3>
+                    <h3 class="text-xl font-medium text-primary/90 mb-4"><a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hainize.md" target="_blank" rel="noopener noreferrer" class="hover:underline">HAINIZE</a></h3>
                     <p class="text-dark/60 text-sm">
                         Toolkit and developer entry for practical implementation.
                     </p>
@@ -325,6 +327,16 @@
                     </a>
                 </div>
             </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm border border-light/70 p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-dark mb-1">Glossary</h3>
+                    <p class="text-dark/70">Core terms and working definitions for the HAIN framework.</p>
+                </div>
+                <a href="https://github.com/hainworldhq/hain-glossary" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-primary font-medium hover:underline">
+                    Browse Glossary <i class="fa fa-arrow-right ml-1"></i>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -342,9 +354,14 @@
                             Dive deep into the Hybrid AI Native framework – its core principles, architectural design, and practical implementation guidelines.
                         </p>
                         <!-- 备注：请核实此PDF地址是否真实存在，若未上线可临时替换为GitHub仓地址 -->
-                        <a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                            <i class="fa fa-download mr-2"></i> Download Full White Paper
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                                <i class="fa fa-download mr-2"></i> Download Full White Paper
+                            </a>
+                            <a href="https://github.com/hainworldhq/hain-glossary" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-light transition-colors">
+                                Browse Glossary
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -358,7 +375,7 @@
                 <div>
                     <h3 class="text-2xl font-bold mb-4">HAIN World</h3>
                     <p class="text-white/70 mb-6">
-                        The public-facing identity for the Hybrid AI Native concept.
+                        The public-facing identity for the <a href="https://github.com/hainworldhq/hain-glossary/blob/main/terms/hybrid-ai-native.md" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Hybrid AI Native</a> concept.
                     </p>
                 </div>
                 <div>
@@ -367,8 +384,8 @@
                         <li><a href="https://hainworld.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainworld.com</a></li>
                         <li><a href="https://hain.world" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hain.world</a></li>
                         <li><a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainoa.org</a></li>
+                        <li><a href="https://github.com/hainworldhq/hain-glossary" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Glossary</a></li>
                         <li><a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">White Paper (PDF)</a></li>
-                        <!-- 关键修改3：补充邮箱联系方式 -->
                         <li><a href="mailto:hello@hainworld.com" class="hover:text-white transition-colors">hello@hainworld.com</a></li>
                     </ul>
                 </div>
@@ -391,6 +408,8 @@
         
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            const expanded = !mobileMenu.classList.contains('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
         });
 
         // 回到顶部按钮逻辑
