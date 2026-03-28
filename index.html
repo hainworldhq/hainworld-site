@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 基础元数据 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- SEO 核心标签 -->
-    <meta name="description" content="HAIN World is the public-facing identity for the Hybrid AI Native concept - a structured entry point for cloud, edge, and agentic AI-native systems.">
-    <title>HAIN World - Hybrid AI Native</title>
-    
-    <!-- Open Graph 社交标签 -->
-    <meta property="og:title" content="HAIN World - Hybrid AI Native">
-    <meta property="og:description" content="A structured entry point for cloud, edge, and agentic AI-native systems.">
+
+    <meta name="description" content="HAIN World is the total public entry for the HAIN system — connecting the Hybrid AI Native category, architecture, protocol, and productization layers.">
+    <title>HAIN World — Hybrid AI Native System Entry</title>
+
+    <meta property="og:title" content="HAIN World — Hybrid AI Native System Entry">
+    <meta property="og:description" content="The total public entry for the HAIN system: category, architecture, protocol, and productization.">
     <meta property="og:url" content="https://hainworld.com">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://hainworld.com/og-image.png"> <!-- 替换为实际 OG 图地址 -->
-    
-    <!-- Twitter 卡片标签 -->
+    <meta property="og:image" content="https://hainworld.com/og-image.png">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="HAIN World - Hybrid AI Native">
-    <meta name="twitter:description" content="A structured entry point for cloud, edge, and agentic AI-native systems.">
-    <meta name="twitter:image" content="https://hainworld.com/og-image.png"> <!-- 替换为实际 OG 图地址 -->
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://hainworld.com/favicon.ico" type="image/x-icon"> <!-- 替换为实际 favicon 地址 -->
-    <link rel="shortcut icon" href="https://hainworld.com/favicon.ico" type="image/x-icon"> <!-- 替换为实际 favicon 地址 -->
-    
-    <!-- 外部资源 -->
+    <meta name="twitter:title" content="HAIN World — Hybrid AI Native System Entry">
+    <meta name="twitter:description" content="The total public entry for the HAIN system: category, architecture, protocol, and productization.">
+    <meta name="twitter:image" content="https://hainworld.com/og-image.png">
+
+    <link rel="icon" href="https://hainworld.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://hainworld.com/favicon.ico" type="image/x-icon">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- Tailwind 配置 -->
+
     <script>
         tailwind.config = {
             theme: {
@@ -40,31 +33,28 @@
                         primary: '#165DFF',
                         secondary: '#36CFC9',
                         dark: '#1D2129',
+                        muted: '#4E5969',
                         light: '#F2F3F5',
+                        line: '#E5E6EB'
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
                     },
+                    boxShadow: {
+                        highlight: '0 12px 24px -8px rgba(22, 93, 255, 0.15)'
+                    }
                 }
             }
         }
     </script>
-    
-    <!-- 自定义工具类 -->
+
     <style type="text/tailwindcss">
         @layer utilities {
-            .content-auto {
-                content-visibility: auto;
-            }
-            .text-balance {
-                text-wrap: balance;
-            }
             .section-padding {
                 padding: clamp(4rem, 8vw, 8rem) 0;
             }
-            .card-highlight {
-                transform: translateY(-8px);
-                box-shadow: 0 12px 24px -8px rgba(22, 93, 255, 0.15);
+            .text-balance {
+                text-wrap: balance;
             }
             .hain-card {
                 position: relative;
@@ -78,27 +68,27 @@
                 width: 4px;
                 height: 100%;
                 background: #165DFF;
-                opacity: 0.8;
+                opacity: 0.9;
+            }
+            .hain-chain-line {
+                background: linear-gradient(90deg, rgba(22,93,255,0.18), rgba(22,93,255,0.36), rgba(22,93,255,0.18));
             }
         }
     </style>
-    
-    <!-- Inter 字体 -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-sans text-dark bg-white">
-    <!-- 导航栏 -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-light">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-line">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-primary">HAIN World</a>
             <div class="hidden md:flex space-x-8">
                 <a href="#why" class="text-dark/80 hover:text-primary transition-colors">Why Now</a>
-                <a href="#structure" class="text-dark/80 hover:text-primary transition-colors">Core Structure</a>
+                <a href="#system" class="text-dark/80 hover:text-primary transition-colors">Five-Site Chain</a>
                 <a href="#entry" class="text-dark/80 hover:text-primary transition-colors">Entry Points</a>
-                <!-- 桌面端 White Paper 导航链接 -->
                 <a href="#whitepaper" class="text-dark/80 hover:text-primary transition-colors">White Paper</a>
             </div>
             <div class="md:hidden">
@@ -107,219 +97,202 @@
                 </button>
             </div>
         </div>
-        <!-- 移动端菜单 -->
-        <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-light">
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-line">
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
                 <a href="#why" class="text-dark/80 hover:text-primary py-2 transition-colors">Why Now</a>
-                <a href="#structure" class="text-dark/80 hover:text-primary py-2 transition-colors">Core Structure</a>
+                <a href="#system" class="text-dark/80 hover:text-primary py-2 transition-colors">Five-Site Chain</a>
                 <a href="#entry" class="text-dark/80 hover:text-primary py-2 transition-colors">Entry Points</a>
-                <!-- 移动端 White Paper 导航链接 -->
                 <a href="#whitepaper" class="text-dark/80 hover:text-primary py-2 transition-colors">White Paper</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero 区域 -->
-    <section class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8">
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-4xl text-center">
             <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-bold text-dark mb-6 leading-tight">HAIN World</h1>
-            <p class="text-[clamp(1.25rem,3vw,1.75rem)] text-dark/80 mb-8 text-balance">The public-facing identity for the Hybrid AI Native concept.</p>
-            <p class="text-lg text-dark/70 mb-10 max-w-3xl mx-auto text-balance">
-                A structured entry point for cloud, edge, and agentic AI-native systems.
+            <p class="text-[clamp(1.2rem,3vw,1.75rem)] text-dark/80 mb-8 text-balance">The total public entry for the Hybrid AI Native system.</p>
+            <p class="text-lg text-muted mb-10 max-w-3xl mx-auto text-balance">
+                HAIN World introduces the broader HAIN system — connecting category, architecture,
+                protocol, and productization across local, edge, private, and cloud environments.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                    Explore HAINOA
+                <a href="https://hainative.com" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                    Explore HAINATIVE
                 </a>
-                <a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-light transition-colors">
-                    Visit GitHub
+                <a href="https://hainpro.com" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-light transition-colors">
+                    Explore HAINPRO
                 </a>
             </div>
-            
-            <!-- HAIN 框架图 -->
-            <div class="mt-20 max-w-4xl mx-auto">
-                <div class="bg-light rounded-2xl p-8 border border-light/80 shadow-sm">
-                    <h3 class="text-xl font-semibold text-center mb-8 text-dark">HAIN Framework</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
-                        <!-- 连接线 -->
-                        <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/30 -translate-y-1/2 z-0"></div>
-                        <div class="hidden md:block absolute top-1/2 left-1/3 w-0.5 h-20 bg-primary/30 -translate-x-1/2 -translate-y-10 z-0"></div>
-                        <div class="hidden md:block absolute top-1/2 right-1/3 w-0.5 h-20 bg-primary/30 translate-x-1/2 -translate-y-10 z-0"></div>
-                        
-                        <!-- Cloud -->
-                        <div class="hain-card bg-white rounded-xl p-6 shadow-md border border-primary/20 relative z-10 hover:shadow-lg transition-shadow">
-                            <div class="text-primary text-3xl mb-4"><i class="fa fa-cloud"></i></div>
-                            <h4 class="font-semibold text-lg mb-2">Cloud</h4>
-                            <p class="text-dark/70 text-sm">Scale & shared intelligence</p>
+
+            <div class="mt-20 max-w-5xl mx-auto">
+                <div class="bg-light rounded-2xl p-8 border border-line shadow-sm">
+                    <h3 class="text-xl font-semibold text-center mb-8 text-dark">HAIN System at a Glance</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-5 relative">
+                        <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 hain-chain-line -translate-y-1/2 z-0"></div>
+
+                        <div class="hain-card bg-white rounded-xl p-5 shadow-sm border border-primary/20 relative z-10 hover:shadow-md transition-shadow">
+                            <div class="text-primary text-2xl mb-3"><i class="fa fa-globe"></i></div>
+                            <h4 class="font-semibold text-base mb-2">HAIN World</h4>
+                            <p class="text-muted text-sm">Public entry and total system overview</p>
                         </div>
-                        
-                        <!-- Edge -->
-                        <div class="hain-card bg-white rounded-xl p-6 shadow-md border border-primary/20 relative z-10 hover:shadow-lg transition-shadow">
-                            <div class="text-primary text-3xl mb-4"><i class="fa fa-server"></i></div>
-                            <h4 class="font-semibold text-lg mb-2">Edge</h4>
-                            <p class="text-dark/70 text-sm">Local execution & privacy</p>
+                        <div class="hain-card bg-white rounded-xl p-5 shadow-sm border border-primary/20 relative z-10 hover:shadow-md transition-shadow">
+                            <div class="text-primary text-2xl mb-3"><i class="fa fa-lightbulb-o"></i></div>
+                            <h4 class="font-semibold text-base mb-2">HAINATIVE</h4>
+                            <p class="text-muted text-sm">Category definition and manifesto layer</p>
                         </div>
-                        
-                        <!-- Agentic Systems -->
-                        <div class="hain-card bg-white rounded-xl p-6 shadow-md border border-primary/20 relative z-10 hover:shadow-lg transition-shadow">
-                            <div class="text-primary text-3xl mb-4"><i class="fa fa-cogs"></i></div>
-                            <h4 class="font-semibold text-lg mb-2">Agentic Systems</h4>
-                            <p class="text-dark/70 text-sm">Orchestration & decision flows</p>
+                        <div class="hain-card bg-white rounded-xl p-5 shadow-sm border border-primary/20 relative z-10 hover:shadow-md transition-shadow">
+                            <div class="text-primary text-2xl mb-3"><i class="fa fa-sitemap"></i></div>
+                            <h4 class="font-semibold text-base mb-2">HAINOA</h4>
+                            <p class="text-muted text-sm">Open architecture and system language</p>
+                        </div>
+                        <div class="hain-card bg-white rounded-xl p-5 shadow-sm border border-primary/20 relative z-10 hover:shadow-md transition-shadow">
+                            <div class="text-primary text-2xl mb-3"><i class="fa fa-random"></i></div>
+                            <h4 class="font-semibold text-base mb-2">HAINPRO</h4>
+                            <p class="text-muted text-sm">Protocol atlas, HAINP, and interoperability</p>
+                        </div>
+                        <div class="hain-card bg-white rounded-xl p-5 shadow-sm border border-primary/20 relative z-10 hover:shadow-md transition-shadow">
+                            <div class="text-primary text-2xl mb-3"><i class="fa fa-wrench"></i></div>
+                            <h4 class="font-semibold text-base mb-2">HAINIZE</h4>
+                            <p class="text-muted text-sm">Productization, adoption, and operationalization</p>
                         </div>
                     </div>
-                    <div class="mt-8 text-center text-dark/60 text-sm">
-                        Hybrid AI Native: Unifying cloud, edge, and agentic intelligence
+                    <div class="mt-8 text-center text-muted text-sm">
+                        Category first, then architecture, then protocol, then productization.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Now 区域 -->
     <section id="why" class="bg-light section-padding px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-5xl">
             <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-8 text-center">Why Hybrid AI Native, and why now</h2>
-            <div class="prose max-w-none mb-12">
+            <div class="max-w-4xl mx-auto text-center mb-12">
                 <p class="text-lg text-dark/80 mb-6">
-                    AI systems have evolved beyond single deployment models. Cloud, edge, and agentic workflows are now interconnected parts of a single system landscape.
+                    AI systems are no longer defined by a single deployment model. AI-native design,
+                    hybrid and edge execution, and agentic orchestration are increasingly appearing together
+                    as one systems pattern.
                 </p>
-                <p class="text-lg text-dark/80">
-                    This shift demands clearer language and structure. HAIN World documents this evolution through architecture notes and conceptual assets.
+                <p class="text-lg text-muted">
+                    HAIN World exists to introduce that pattern clearly and connect visitors to the deeper layers of the HAIN system.
                 </p>
             </div>
-            
-            <!-- 三列卡片 -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-light/50">
-                    <h3 class="text-xl font-semibold text-primary mb-3">Cloud</h3>
-                    <p class="text-dark/70">Scale, coordination, shared intelligence.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-line">
+                    <h3 class="text-xl font-semibold text-primary mb-3">AI-Native</h3>
+                    <p class="text-muted">AI becomes an embedded system capability rather than a bolt-on feature.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-light/50">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-line">
+                    <h3 class="text-xl font-semibold text-primary mb-3">Hybrid</h3>
+                    <p class="text-muted">Execution spans private, public, and mixed environments under real constraints.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-line">
                     <h3 class="text-xl font-semibold text-primary mb-3">Edge</h3>
-                    <p class="text-dark/70">Local execution, lower latency, privacy.</p>
+                    <p class="text-muted">Local execution, lower latency, data sovereignty, and environment-specific autonomy matter.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-light/50">
-                    <h3 class="text-xl font-semibold text-primary mb-3">Agentic Systems</h3>
-                    <p class="text-dark/70">Tool use, orchestration, decision flows.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Structure 区域 -->
-    <section id="structure" class="section-padding px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-12 text-center">Core structure</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-                <!-- HAIN World -->
-                <div class="border-2 border-primary rounded-xl p-8 card-highlight bg-white hain-card">
-                    <div class="text-primary text-2xl mb-4"><i class="fa fa-globe"></i></div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">HAIN World</h3>
-                    <p class="text-dark/80 text-lg">
-                        Public entry point for the Hybrid AI Native concept.
-                    </p>
-                </div>
-                
-                <!-- HAINOA -->
-                <div class="border border-light rounded-xl p-8 hover:shadow-md transition-shadow bg-white hain-card">
-                    <div class="text-primary text-xl mb-4"><i class="fa fa-sitemap"></i></div>
-                    <h3 class="text-xl font-semibold text-primary mb-4">HAINOA</h3>
-                    <p class="text-dark/70">
-                        Open architecture layer with explicit principles and structure.
-                    </p>
-                </div>
-                
-                <!-- HAINIZE -->
-                <div class="border border-light/70 rounded-xl p-6 hover:shadow-md transition-shadow bg-white/90 hain-card">
-                    <div class="text-primary/80 text-xl mb-4"><i class="fa fa-wrench"></i></div>
-                    <h3 class="text-xl font-medium text-primary/90 mb-4">HAINIZE</h3>
-                    <p class="text-dark/60 text-sm">
-                        Toolkit and developer entry for practical implementation.
-                    </p>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-line">
+                    <h3 class="text-xl font-semibold text-primary mb-3">Agentic</h3>
+                    <p class="text-muted">Tool use, orchestration, memory, observability, and governance shape runtime behavior.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Entry Points 区域 -->
-    <section id="entry" class="bg-light section-padding px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4 text-center">Entry points</h2>
-            <p class="text-lg text-dark/70 text-center mb-12 max-w-3xl mx-auto">
-                Explore the framework through its public, architectural, and social entry points.
+    <section id="system" class="section-padding px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4 text-center">Five-site chain</h2>
+            <p class="text-lg text-muted text-center mb-12 max-w-3xl mx-auto">
+                Each HAIN site has one primary job. Together they form a clear path from concept to adoption.
             </p>
-            
-            <!-- 关键修改1：布局改为 md:grid-cols-2 xl:grid-cols-4，适配不同屏幕宽度 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-                <!-- GitHub -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 items-start">
+                <div class="border-2 border-primary rounded-xl p-6 bg-white hain-card shadow-highlight">
+                    <div class="text-primary text-2xl mb-3"><i class="fa fa-globe"></i></div>
+                    <h3 class="text-xl font-bold text-primary mb-3">HAIN World</h3>
+                    <p class="text-dark/80">Total entry and ecosystem overview.</p>
+                </div>
+                <div class="border border-line rounded-xl p-6 bg-white hain-card hover:shadow-md transition-shadow">
+                    <div class="text-primary text-xl mb-3"><i class="fa fa-lightbulb-o"></i></div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">HAINATIVE</h3>
+                    <p class="text-muted">Defines the Hybrid AI Native category and its principles.</p>
+                </div>
+                <div class="border border-line rounded-xl p-6 bg-white hain-card hover:shadow-md transition-shadow">
+                    <div class="text-primary text-xl mb-3"><i class="fa fa-sitemap"></i></div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">HAINOA</h3>
+                    <p class="text-muted">Explains the architecture, structure, and system language.</p>
+                </div>
+                <div class="border border-line rounded-xl p-6 bg-white hain-card hover:shadow-md transition-shadow">
+                    <div class="text-primary text-xl mb-3"><i class="fa fa-random"></i></div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">HAINPRO</h3>
+                    <p class="text-muted">Maps the protocol stack and specifies the missing execution layer.</p>
+                </div>
+                <div class="border border-line rounded-xl p-6 bg-white hain-card hover:shadow-md transition-shadow">
+                    <div class="text-primary text-xl mb-3"><i class="fa fa-wrench"></i></div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">HAINIZE</h3>
+                    <p class="text-muted">Operationalizes the system through adoption and productization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="entry" class="bg-light section-padding px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4 text-center">Entry points</h2>
+            <p class="text-lg text-muted text-center mb-12 max-w-3xl mx-auto">
+                Start with the layer that matches your intent: concept, architecture, protocol, productization, or source material.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="text-primary text-3xl mb-4">
-                        <i class="fa fa-github"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">GitHub</h3>
-                    <p class="text-dark/70 mb-4">
-                        Repositories, notes, and project assets.
-                    </p>
-                    <div class="bg-light/80 rounded-lg p-3 mb-4 text-sm text-dark/60">
-                        <i class="fa fa-info-circle text-primary mr-2"></i>
-                        Architecture notes, terminology, and starter templates.
-                    </div>
-                    <a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
-                        Open GitHub <i class="fa fa-arrow-right ml-1"></i>
+                    <div class="text-primary text-3xl mb-4"><i class="fa fa-lightbulb-o"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">HAINATIVE</h3>
+                    <p class="text-muted mb-4">Category definition, manifesto, and the conceptual front door.</p>
+                    <a href="https://hainative.com" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
+                        Visit HAINATIVE <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
-                
-                <!-- HAINOA -->
+
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="text-primary text-3xl mb-4">
-                        <i class="fa fa-sitemap"></i>
-                    </div>
+                    <div class="text-primary text-3xl mb-4"><i class="fa fa-sitemap"></i></div>
                     <h3 class="text-xl font-semibold mb-2">HAINOA</h3>
-                    <p class="text-dark/70 mb-4">
-                        Architecture notes and conceptual framing.
-                    </p>
-                    <div class="bg-light/80 rounded-lg p-3 mb-4 text-sm text-dark/60">
-                        <i class="fa fa-info-circle text-primary mr-2"></i>
-                        Core architectural principles and structured documentation.
-                    </div>
+                    <p class="text-muted mb-4">Open architecture notes, structural principles, and system language.</p>
                     <a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
                         Visit HAINOA <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
-                
-                <!-- LinkedIn -->
+
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="text-primary text-3xl mb-4">
-                        <i class="fa fa-linkedin"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
-                    <p class="text-dark/70 mb-4">
-                        Updates and narrative positioning.
-                    </p>
-                    <div class="bg-light/80 rounded-lg p-3 mb-4 text-sm text-dark/60">
-                        <i class="fa fa-info-circle text-primary mr-2"></i>
-                        Industry insights and framework updates.
-                    </div>
-                    <a href="https://linkedin.com/company/hainworld" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
-                        View LinkedIn <i class="fa fa-arrow-right ml-1"></i>
+                    <div class="text-primary text-3xl mb-4"><i class="fa fa-random"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">HAINPRO</h3>
+                    <p class="text-muted mb-4">Protocol atlas, comparison hub, gap mapping, HAINP drafts, and profiles.</p>
+                    <a href="https://hainpro.com" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
+                        Visit HAINPRO <i class="fa fa-arrow-right ml-1"></i>
                     </a>
                 </div>
-                
-                <!-- White Paper 卡片 -->
+
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="text-primary text-3xl mb-4">
-                        <i class="fa fa-file-pdf-o"></i>
-                    </div>
+                    <div class="text-primary text-3xl mb-4"><i class="fa fa-wrench"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">HAINIZE</h3>
+                    <p class="text-muted mb-4">Productization, adoption, and the future operational layer of the HAIN system.</p>
+                    <a href="https://hainize.com" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
+                        Visit HAINIZE <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-primary text-3xl mb-4"><i class="fa fa-github"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                    <p class="text-muted mb-4">Repositories, notes, terminology, white paper assets, and site sources.</p>
+                    <a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="text-primary font-medium hover:underline inline-flex items-center">
+                        Open GitHub <i class="fa fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-primary text-3xl mb-4"><i class="fa fa-file-pdf-o"></i></div>
                     <h3 class="text-xl font-semibold mb-2">White Paper</h3>
-                    <p class="text-dark/70 mb-4">
-                        Comprehensive framework documentation.
-                    </p>
-                    <div class="bg-light/80 rounded-lg p-3 mb-4 text-sm text-dark/60">
-                        <i class="fa fa-info-circle text-primary mr-2"></i>
-                        Structured overview of the HAIN framework, principles, and public architecture.
-                    </div>
-                    <!-- 关键修改2：链接改为 #whitepaper，文案改为 Learn more，避免CTA重复 -->
+                    <p class="text-muted mb-4">Structured overview of the HAIN direction, system logic, and public framework.</p>
                     <a href="#whitepaper" class="text-primary font-medium hover:underline inline-flex items-center">
                         Learn more <i class="fa fa-arrow-right ml-1"></i>
                     </a>
@@ -328,18 +301,18 @@
         </div>
     </section>
 
-    <!-- White Paper 独立板块 -->
     <section id="whitepaper" class="section-padding px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto max-w-4xl">
-            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-light/80">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-line">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="text-primary text-6xl md:text-8xl">
                         <i class="fa fa-file-text-o"></i>
                     </div>
                     <div>
                         <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4">HAIN White Paper</h2>
-                        <p class="text-lg text-dark/70 mb-6">
-                            A structured overview of the HAIN framework, its working principles, architectural logic, and public-facing system structure.
+                        <p class="text-lg text-muted mb-6">
+                            A structured overview of the Hybrid AI Native direction, the HAIN system,
+                            and the relationship between category, architecture, protocol, and productization.
                         </p>
                         <a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors">
                             <i class="fa fa-download mr-2"></i> Download Full White Paper
@@ -350,24 +323,32 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto max-w-5xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <h3 class="text-2xl font-bold mb-4">HAIN World</h3>
                     <p class="text-white/70 mb-6">
-                        The public-facing identity for the Hybrid AI Native concept.
+                        Total public entry for the HAIN system.
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Domains & Resources</h3>
+                    <h3 class="text-lg font-semibold mb-4">HAIN sites</h3>
                     <ul class="space-y-2 text-white/70">
                         <li><a href="https://hainworld.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainworld.com</a></li>
-                        <li><a href="https://hain.world" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hain.world</a></li>
+                        <li><a href="https://hainative.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainative.com</a></li>
                         <li><a href="https://hainoa.org" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainoa.org</a></li>
+                        <li><a href="https://hainpro.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainpro.com</a></li>
+                        <li><a href="https://hainize.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">hainize.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2 text-white/70">
+                        <li><a href="https://github.com/hainworldhq" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub Organization</a></li>
                         <li><a href="https://hainworld.com/whitepaper.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">White Paper (PDF)</a></li>
-                                            <li><a href="mailto:hello@hainworld.com" class="hover:text-white transition-colors">hello@hainworld.com</a></li>
+                        <li><a href="https://linkedin.com/company/hainworld" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="mailto:hello@hainworld.com" class="hover:text-white transition-colors">hello@hainworld.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -377,25 +358,22 @@
         </div>
     </footer>
 
-    <!-- 回到顶部按钮 -->
     <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary/90" aria-label="Back to top">
         <i class="fa fa-arrow-up"></i>
     </button>
 
     <script>
-        // 移动端菜单逻辑
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
             const expanded = !mobileMenu.classList.contains('hidden');
             mobileMenuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
         });
 
-        // 回到顶部按钮逻辑
         const backToTopBtn = document.getElementById('backToTop');
-        
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
                 backToTopBtn.classList.remove('opacity-0', 'invisible');
@@ -405,33 +383,21 @@
                 backToTopBtn.classList.remove('opacity-100', 'visible');
             }
         });
-        
+
         backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // 平滑滚动
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     const navHeight = document.querySelector('nav').offsetHeight;
                     const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // 关闭移动端菜单
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
                     mobileMenu.classList.add('hidden');
                     mobileMenuBtn.setAttribute('aria-expanded', 'false');
                 }
